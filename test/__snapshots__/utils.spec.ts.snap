@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`utils.ts createInterfaceDefinition() Should create an interface definition with the default name 1`] = `
+"export interface LocalesKeys {
+  'a:b.c': string;
+  'a:e': string;
+  'a:g.h': string;
+  'j': string;
+}
+"
+`;
+
+exports[`utils.ts joinLocales() Should join locales 1`] = `
+{
+  "a": {
+    "b": {
+      "c": "d",
+    },
+    "e": "f",
+    "g": {
+      "h": "i",
+    },
+  },
+  "j": "k",
+  "l": {
+    "m": "n",
+  },
+}
+`;
+
+exports[`utils.ts readLocaleFile() Should read and parse a locale file 1`] = `
+{
+  "a": {
+    "b": "c",
+  },
+}
+`;

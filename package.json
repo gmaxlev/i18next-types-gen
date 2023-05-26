@@ -1,5 +1,5 @@
 {
-  "name": "i18next-types-generator",
+  "name": "i18next-types-gen",
   "version": "0.0.1",
   "description": "",
   "main": "./lib/index.js",
@@ -9,13 +9,13 @@
   "author": "Maksym Levytskyi https://github.com/gmaxlev",
   "license": "MIT",
   "scripts": {
-    "test": "npm run prettier && npm run lint && jest . --silent",
-    "test:watch": "jest . --watch --silent",
+    "test": "npm run prettier && npm run lint && jest .",
+    "test:watch": "jest . --watch",
     "dev": "nodemon --watch './**/*.ts' --exec 'node --experimental-specifier-resolution=node --loader ts-node/esm' src/index.ts",
     "build:dts": "tsc --declaration --emitDeclarationOnly -p . --outDir dts",
     "build": "rm -rf lib && rm -rf dts && npm run build:dts && rollup -c rollup.config.cjs --bundleConfigAsCjs && rm -rf dts",
-    "lint": "eslint .",
-    "prettier": "prettier --check .",
+    "lint": "eslint src/*",
+    "prettier": "prettier --check src",
     "prepare": "husky install"
   },
   "lint-staged": {

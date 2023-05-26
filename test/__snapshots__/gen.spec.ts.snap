@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`gen.ts genLocalesType() Should generate type definition and use specified name 1`] = `
+{
+  "size": 3,
+  "typeDefinition": "export interface SpecialLocalesKeys {
+  'a:b': string;
+  'd:e': string;
+  'g': string;
+}
+",
+}
+`;
+
+exports[`gen.ts genLocalesType() Should generate type definition and use the default interface name 1`] = `
+{
+  "size": 3,
+  "typeDefinition": "export interface LocalesKeys {
+  'a:b': string;
+  'd:e': string;
+  'g': string;
+}
+",
+}
+`;

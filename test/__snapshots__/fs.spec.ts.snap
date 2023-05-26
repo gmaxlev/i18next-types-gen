@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`fs.ts genLocalesTypeIntoFile() Should save type declaration in a file 1`] = `
+{
+  "/src/file1.json": "{"a":{"b":"c"}}",
+  "/src/file2.json": "{"d":{"e":"f"}}",
+  "/src/file3.json": "{"g":"h"}",
+  "/src/output/path/my-file.ts": "export interface SpecialLocalesKeys {
+  'a:b': string;
+  'd:e': string;
+  'g': string;
+}
+",
+}
+`;
