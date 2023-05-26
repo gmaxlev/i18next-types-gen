@@ -35,4 +35,16 @@ module.exports = [
       },
     ],
   },
+  {
+    ...base,
+    input: "./src/bin.ts",
+    external: [...base.external, "commander"],
+    output: [
+      {
+        file: "lib/cli.js",
+        banner: "#!/usr/bin/env node",
+        format: "cjs",
+      },
+    ],
+  },
 ];

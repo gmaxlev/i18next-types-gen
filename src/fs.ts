@@ -7,6 +7,10 @@ interface GenLocalesTypeIntoFileOptions extends GenLocalesTypeOptions {
   output: string;
 }
 
+/**
+ * Generate locales type definition into a file.
+ * @param options The options.
+ */
 export async function genLocalesTypeIntoFile(
   options: GenLocalesTypeIntoFileOptions
 ) {

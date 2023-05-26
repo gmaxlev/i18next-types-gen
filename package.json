@@ -7,6 +7,7 @@
   "bin": "./lib/cli.js",
   "types": "./lib/index.d.ts",
   "author": "Maksym Levytskyi https://github.com/gmaxlev",
+  "homepage": "https://github.com/gmaxlev/i18next-types-gen",
   "license": "MIT",
   "scripts": {
     "test": "npm run prettier && npm run lint && jest .",
