@@ -6,8 +6,24 @@
   "module": "./lib/index.esm.js",
   "bin": "./lib/cli.js",
   "types": "./lib/index.d.ts",
+  "keywords": [
+    "l10n",
+    "i18n",
+    "i18next",
+    "internationalization",
+    "translation",
+    "localization",
+    "globalization",
+    "typescript",
+    "typings"
+  ],
   "author": "Maksym Levytskyi https://github.com/gmaxlev",
   "homepage": "https://github.com/gmaxlev/i18next-types-gen",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gmaxlev/i18next-types-gen.git"
+  },
+  "bugs": "https://github.com/gmaxlev/i18next-types-gen/issues",
   "license": "MIT",
   "scripts": {
     "test": "npm run prettier && npm run lint && jest .",
