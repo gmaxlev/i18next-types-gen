@@ -1,6 +1,6 @@
 # i18next-types-gen
 
-Generates TypeScript types from i18next translation files.
+Generates TS declaration file from i18next translation files.
 
 Due to the [issue](https://github.com/i18next/react-i18next/issues/1601), it is currently not possible to use TypeScript to infer types from translation files when you have many keys. This tool solves this problem by generating a declaration type file from translation files using a simple script.
 

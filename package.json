@@ -1,7 +1,7 @@
 {
   "name": "i18next-types-gen",
-  "version": "0.0.1",
-  "description": "",
+  "version": "1.0.0",
+  "description": "Generates TS declaration file from i18next translation files.",
   "main": "./lib/index.js",
   "module": "./lib/index.esm.js",
   "bin": "./lib/cli.js",
