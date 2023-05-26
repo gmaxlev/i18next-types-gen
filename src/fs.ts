@@ -46,6 +46,8 @@ export async function genLocalesTypeIntoFile(
       throw e;
     }
     console.log("🎉 Saved locales type definition into file:", output);
+
+    return { size };
   } catch (e) {
     console.error("Failed to generate type definition into file");
     throw e;

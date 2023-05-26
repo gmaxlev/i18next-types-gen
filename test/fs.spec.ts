@@ -34,6 +34,7 @@ describe("fs.ts", () => {
         interfaceName: "SpecialLocalesKeys",
       });
 
+      expect(result).toEqual({ size: 3 });
       expect(vol.toJSON()).toMatchSnapshot();
     });
   });
