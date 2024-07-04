@@ -1,5 +1,6 @@
 import { isRecord } from "tsguarder";
 import fsp from "fs/promises";
+import { removeSuffixes } from "./plural";
 
 /**
  * Recursively extract keys from a JSON object.
@@ -29,11 +30,20 @@ export function extractKeys(
  * @param name The name of the interface.
  */
 export function createInterfaceDefinition(set: Set<string>, name: string) {
-  let string = `export interface ${name} {`;
-  set.forEach((key) => {
-    const formatNamespace = key.replace(".", ":");
-    string += `\n  '${formatNamespace}': string;`;
+  const keys = new Set<string>();
+
+  set.forEach((item) => {
+    let formatNamespace = item.replace(".", ":");
+    formatNamespace = removeSuffixes(formatNamespace);
+    keys.add(formatNamespace);
   });
+
+  let string = `export interface ${name} {`;
+
+  keys.forEach((key) => {
+    string += `\n  '${key}': string;`;
+  });
+
   string += "\n}\n";
   return string;
 }
